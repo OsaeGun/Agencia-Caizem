@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agência Caizem</title>
+
+  <!-- Google Fonts: Montserrat e Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome (ícones) -->
+  <script src="https://kit.fontawesome.com/aa9e0e9311.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 80,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true, // anima uma vez só
+  });
+</script>
+</head>
+<header class="topo">
+  <div class="container">
+    <a href="#topo">
+  <img src="img/logo-caizem.png" alt="Logo Caizem" class="logo-img">
+  <h1 class="logo">Caizem</h1>
+</a>
+    <nav class="menu">
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section id="sobre">
+    <h2>Sobre nós</h2>
+    <p>
+      A Agência Caizem nasceu para impulsionar negócios no digital. De marketing estratégico ao desenvolvimento de sites, nossa missão é transformar ideias em resultados.
+      Trabalhamos com pequenos empreendedores e lojas virtuais que desejam crescer com inteligência e criatividade.
+    </p>
+  </section>
+
+  <section id="servicos">
+  <h2 data-aos="fade-up">Nossos Serviços</h2>
+  <div class="servicos-grid">
+    <div class="servico">
+      <i class="fas fa-bullhorn"></i>
+      <h3>Marketing Digital</h3>
+      <p>Criação de campanhas que posicionam sua marca com força e clareza.</p>
+    </div>
+    <div class="servico">
+      <i class="fas fa-chart-line"></i>
+      <h3>Tráfego Pago</h3>
+      <p>Gestão de anúncios que geram resultados reais em vendas.</p>
+    </div>
+    <div class="servico">
+      <i class="fas fa-code"></i>
+      <h3>Desenvolvimento Web</h3>
+      <p>Sites modernos, rápidos e otimizados para conversão.</p>
+    </div>
+    <div class="servico">
+      <i class="fas fa-box-open"></i>
+      <h3>Dropshipping</h3>
+      <p>Estrutura completa para sua operação com foco em escalabilidade.</p>
+    </div>
+    <div class="servico">
+      <i class="fas fa-pen-nib"></i>
+      <h3>Branding</h3>
+      <p>Identidade visual marcante e alinhada com o seu público.</p>
+    </div>
+    <div class="servico">
+      <i class="fas fa-gears"></i>
+      <h3>Automações</h3>
+      <p>Soluções inteligentes para economizar tempo e aumentar produtividade.</p>
+    </div>
+  </div>
+</section>
+  <section class="cta">
+    <h2>Vamos alavancar seu negócio?</h2>
+    <p>Solicite um orçamento personalizado com nossa equipe especializada.</p>
+    <a href="https://wa.me/5551997925275" target="_blank" class="botao-neon">
+      Solicitar Orçamento
+    </a>
+  </a>
+</section>
+
+<section id="portfolio">
+  <h2>Portfólio</h2>
+  <p>Alguns dos projetos e soluções desenvolvidas pela Agência Caizem:</p>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <img src="https://via.placeholder.com/400x250" alt="Projeto 1">
+      <h3>Landing Page para Loja Virtual</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://via.placeholder.com/400x250" alt="Projeto 2">
+      <h3>Campanha de Tráfego para Instagram</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://via.placeholder.com/400x250" alt="Projeto 3">
+      <h3>Identidade Visual para Startup</h3>
+    </div>
+  </div>
+</section>
+
+<section id="formulario-contato">
+  <h2>Fale Conosco</h2>
+  <p>Entre em contato conosco e tire suas dúvidas!</p>
+  <form action="#" method="POST">
+    <div class="form-group">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+    </div>
+    <div class="form-group">
+      <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+    </div>
+    <button type="submit">Enviar mensagem</button>
+  </form>
+</section>
+
+  <section id="contato">
+    <h2>Vamos conversar?</h2>
+    <p>Entre em contato pelo WhatsApp ou siga nossos bastidores e dicas no Instagram.</p>
+    <div class="cta">
+     <a href="https://wa.me/5551997925275?text=Ol%C3%A1!%20Tenho%20interesse%20nos%20servi%C3%A7os%20da%20Ag%C3%AAncia%20Caizem." target="_blank">WhatsApp</a>
+     <a href="https://instagram.com/ale_velho.22" target="_blank">Instagram</a>
+    </div>
+  </section>
+  
+<footer class="rodape">
+  <div class="rodape-container">
+    <h3>Agência Caizem</h3>
+    <p>Soluções digitais inteligentes para transformar seu negócio.</p>
+
+    <div class="redes-sociais">
+      <a href="https://wa.me/5551997925275" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/ale_velho.22" target="_blank"><i class="fab fa-instagram"></i></a>
+      <!-- Adicione outras redes se desejar -->
+    </div>
+    
+    <p class="copyright">
+      © 2025 Agência Caizem. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
